@@ -129,7 +129,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-slate-100 mt-10 sm:mt-16 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs sm:text-sm">
-          <p>&copy; {currentYear} AI Career Forge. All rights reserved.</p>
+          <p>&copy; {currentYear} AI Resume Analyzer. All rights reserved.</p>
           <div className="flex space-x-4 sm:space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-indigo-600 transition-colors">
               Privacy Policy

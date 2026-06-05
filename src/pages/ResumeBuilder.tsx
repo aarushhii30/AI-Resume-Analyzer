@@ -577,8 +577,8 @@ const ResumeBuilder = () => {
                     <div className="pt-3 sm:pt-4 flex justify-end">
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-indigo-600" hover:bg-indigo-700 h-8 sm:h-10 text-xs sm:text-sm"
-                        size="sm"
+                        className="bg-indigo-600 hover:bg-indigo-700 h-8 sm:h-10 text-xs sm:text-sm"
+size="sm"
                       >
                         Next: Summary <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
                       </Button>

@@ -359,7 +359,7 @@ const Home = () => {
                 </div>
                 
                 <p className="text-slate-700 mb-6">
-                  "I landed 3 interviews in my first week after optimizing my resume with AI Career Forge. The keyword suggestions were spot-on for the tech industry."
+                  "I landed 3 interviews in my first week after optimizing my resume with AI Resume Analyzer. The keyword suggestions were spot-on for the tech industry."
                 </p>
                 
                 <div className="flex items-center">
