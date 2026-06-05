@@ -65,20 +65,17 @@
 
 ### Dashboard
 <!-- Replace with your actual screenshot -->
-![Dashboard](./screenshots/Dashboard.png)
-
+![Dashboard](screenshots/Dashboard.png)
 ### Resume Analysis
 <!-- Replace with your actual screenshot -->
-![Resume Analysis](./screenshots/analysis(2).png)
-
+![Resume Analysis](screenshots/analysis(2).png)
 ### Job Match
 <!-- Replace with your actual screenshot -->
-![Job Match](./screenshots/jobmatch.png)
+![Job Match](screenshots/jobmatch.png)
 
 ### Resume Builder
 <!-- Replace with your actual screenshot -->
-![Resume Builder](./screenshots/resumebuilder.png)
-
+![Resume Builder](screenshots/resumebuilder.png)
 ---
 
 ## 📁 Project Structure
