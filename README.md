@@ -64,18 +64,20 @@
 > Add your screenshots here after capturing them from the running app
 
 ### Dashboard
-<!-- Replace with your actual screenshot -->
+
 ![Dashboard](screenshots/Dashboard.png)
+
 ### Resume Analysis
-<!-- Replace with your actual screenshot -->
-![Resume Analysis](./screenshots/analysis.png)
+
+![Resume Analysis](screenshots/analysis%20(2).png)
+
 ### Job Match
-<!-- Replace with your actual screenshot -->
+
 ![Job Match](screenshots/jobmatch.png)
 
 ### Resume Builder
-<!-- Replace with your actual screenshot -->
-![Resume Builder](screenshots/resumebuilder.png)
+
+![Resume Builder](screenshots/resumebuilder.png)r.png)
 ---
 
 ## 📁 Project Structure
