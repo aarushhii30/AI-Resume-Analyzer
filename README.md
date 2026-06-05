@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 AI Career Forge
+# 🚀 AI Resume Analyzer
 
 ### An AI-powered resume analysis and job matching platform
 
