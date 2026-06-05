@@ -68,7 +68,7 @@
 ![Dashboard](screenshots/Dashboard.png)
 ### Resume Analysis
 <!-- Replace with your actual screenshot -->
-![Resume Analysis](screenshots/analysis(2).png)
+![Resume Analysis](./screenshots/analysis.png)
 ### Job Match
 <!-- Replace with your actual screenshot -->
 ![Job Match](screenshots/jobmatch.png)
