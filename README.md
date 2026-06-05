@@ -69,7 +69,7 @@
 
 ### Resume Analysis
 <!-- Replace with your actual screenshot -->
-![Resume Analysis](./screenshots/analsys(2).png)
+![Resume Analysis](./screenshots/analysis(2).png)
 
 ### Job Match
 <!-- Replace with your actual screenshot -->
