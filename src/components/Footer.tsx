@@ -31,7 +31,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-1 sm:col-span-2">
             <div className="mb-4 sm:mb-6">
-              <span className="font-bold text-xl sm:text-2xl text-slate-900">AI Career Forge</span>
+              <span className="font-bold text-xl sm:text-2xl text-slate-900">AI Resume Analyzer</span>
             </div>
             <p className="text-sm sm:text-base text-slate-600 mb-4 sm:mb-6 max-w-sm mx-auto sm:mx-0">
               Using AI to help you forge your career path with better resumes and job matching.
