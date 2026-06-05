@@ -206,7 +206,7 @@ export default function DashboardHome() {
       description: "Get instant feedback on your current resume", 
       icon: <Upload className="h-5 w-5" />,
       link: "/dashboard/analyze",
-      color: "bg-blue-50 text-blue-700 border-blue-200"
+      color: "bg-indigo-50 text-blue-700 border-blue-200"
     },
     { 
       title: "Build New Resume", 
@@ -239,7 +239,7 @@ export default function DashboardHome() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{greeting}</h2>
           <p className="text-gray-500 mt-1">{formattedDate}</p>
         </div>
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+        <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
           <Upload className="mr-2 h-4 w-4" /> Upload New Resume
         </Button>
       </div>
@@ -358,7 +358,7 @@ export default function DashboardHome() {
             </CardContent>
             {recentActivitiesData.length > 0 && !isLoading && (
               <CardFooter className="border-t bg-gray-50">
-                <Button variant="ghost" className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50">
+                <Button variant="ghost" className="w-full text-indigo-600 hover:text-blue-700 hover:bg-indigo-50">
                   View All Activity
                 </Button>
               </CardFooter>
@@ -401,7 +401,7 @@ export default function DashboardHome() {
                         <span>{item.value}%</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
-                        <div className="bg-blue-600 h-2 rounded-full" style={{ width: `${item.value}%` }}></div>
+                        <div className="bg-indigo-600 h-2 rounded-full" style={{ width: `${item.value}%` }}></div>
                       </div>
                     </div>
                   ))}
@@ -410,7 +410,7 @@ export default function DashboardHome() {
             </CardContent>
             {!isLoading && resumeStrength && (
               <CardFooter className="border-t bg-gray-50">
-                <Button variant="ghost" className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50">
+                <Button variant="ghost" className="w-full text-indigo-600 hover:text-blue-700 hover:bg-indigo-50">
                   View Detailed Analysis
                 </Button>
               </CardFooter>
@@ -463,7 +463,7 @@ export default function DashboardHome() {
             </CardContent>
             {upcomingTasksData.length > 0 && !isLoading && (
               <CardFooter className="border-t bg-gray-50">
-                <Button variant="ghost" className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50">
+                <Button variant="ghost" className="w-full text-indigo-600 hover:text-blue-700 hover:bg-indigo-50">
                   View All Tasks
                 </Button>
               </CardFooter>
@@ -471,10 +471,10 @@ export default function DashboardHome() {
           </Card>
           
           {/* Tip of the day (static, so it remains) */}
-          <Card className="border border-blue-100 shadow-sm bg-blue-50">
+          <Card className="border border-blue-100 shadow-sm bg-indigo-50">
             <CardContent className="p-5">
               <div className="flex">
-                <div className="p-2 rounded-full bg-blue-100 text-blue-700 mr-3 flex-shrink-0">
+                <div className="p-2 rounded-full bg-indigo-100 text-blue-700 mr-3 flex-shrink-0">
                   <TrendingUp size={18} />
                 </div>
                 <div>

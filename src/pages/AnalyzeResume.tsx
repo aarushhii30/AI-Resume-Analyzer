@@ -206,21 +206,21 @@ const AnalyzeResume = () => {
           <div className="mb-10">
             <div className="flex items-center justify-center max-w-2xl mx-auto">
               <div className={`flex flex-col items-center ${analysisResult ? 'opacity-50' : 'opacity-100'}`}>
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${file || uploadedResumeId ? 'bg-blue-500 text-white' : 'bg-blue-100 text-blue-500'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${file || uploadedResumeId ? 'bg-indigo-500 text-white' : 'bg-indigo-100 text-blue-500'}`}>
                   <Upload size={18} />
                 </div>
                 <span className="mt-2 text-sm font-medium">Upload</span>
               </div>
-              <div className={`w-16 h-0.5 ${uploadedResumeId || analysisResult ? 'bg-blue-500' : 'bg-gray-200'} mx-2`} />
+              <div className={`w-16 h-0.5 ${uploadedResumeId || analysisResult ? 'bg-indigo-500' : 'bg-gray-200'} mx-2`} />
               <div className={`flex flex-col items-center ${analysisResult ? 'opacity-50' : 'opacity-100'}`}>
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${uploadedResumeId && !analysisResult ? 'bg-blue-500 text-white' : 'bg-blue-100 text-blue-500'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${uploadedResumeId && !analysisResult ? 'bg-indigo-500 text-white' : 'bg-indigo-100 text-blue-500'}`}>
                   <BarChart4 size={18} />
                 </div>
                 <span className="mt-2 text-sm font-medium">Analyze</span>
               </div>
-              <div className={`w-16 h-0.5 ${analysisResult ? 'bg-blue-500' : 'bg-gray-200'} mx-2`} />
+              <div className={`w-16 h-0.5 ${analysisResult ? 'bg-indigo-500' : 'bg-gray-200'} mx-2`} />
               <div className="flex flex-col items-center">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${analysisResult ? 'bg-blue-500 text-white' : 'bg-blue-100 text-blue-500'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${analysisResult ? 'bg-indigo-500 text-white' : 'bg-indigo-100 text-blue-500'}`}>
                   <CheckCircle2 size={18} />
                 </div>
                 <span className="mt-2 text-sm font-medium">Results</span>
@@ -243,13 +243,13 @@ const AnalyzeResume = () => {
               <CardContent className="pt-6">
                 {/* File input area */}
                 <div 
-                  className={`flex flex-col items-center py-12 border-2 ${isDragActive ? 'border-blue-400 bg-blue-50' : 'border-dashed border-gray-300 bg-gray-50'} rounded-lg transition-all duration-200 ease-in-out`}
+                  className={`flex flex-col items-center py-12 border-2 ${isDragActive ? 'border-blue-400 bg-indigo-50' : 'border-dashed border-gray-300 bg-gray-50'} rounded-lg transition-all duration-200 ease-in-out`}
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
                 >
-                  <div className={`w-16 h-16 rounded-full ${file ? 'bg-blue-100' : 'bg-blue-50'} flex items-center justify-center mb-4 transition-all`}>
-                    <Upload size={30} className={`${file ? 'text-blue-600' : 'text-blue-400'} transition-all`} />
+                  <div className={`w-16 h-16 rounded-full ${file ? 'bg-indigo-100' : 'bg-indigo-50'} flex items-center justify-center mb-4 transition-all`}>
+                    <Upload size={30} className={`${file ? 'text-indigo-600' : 'text-blue-400'} transition-all`} />
                   </div>
                   <p className="text-lg font-medium mb-2">{isDragActive ? 'Drop your file here' : 'Drag and drop your resume'}</p>
                   <p className="text-gray-500 mb-6">or</p>
@@ -263,14 +263,14 @@ const AnalyzeResume = () => {
                   />
                   <label
                     htmlFor="resume-upload"
-                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 text-white bg-blue-600 hover:bg-blue-700 h-10 px-6 py-2 ${isLoading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer shadow-sm hover:shadow'}`}
+                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 text-white bg-indigo-600 hover:bg-indigo-700 h-10 px-6 py-2 ${isLoading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer shadow-sm hover:shadow'}`}
                     aria-disabled={isLoading}
                   >
                     Browse Files
                   </label>
                   {file && (
                     <div className="mt-6 text-sm flex items-center gap-2 bg-white p-3 rounded-md border border-blue-100 shadow-sm max-w-sm w-full">
-                      <div className="p-2 bg-blue-50 rounded-full">
+                      <div className="p-2 bg-indigo-50 rounded-full">
                         <FileText className="h-5 w-5 text-blue-500" />
                       </div>
                       <div className="flex-1 min-w-0">
@@ -295,7 +295,7 @@ const AnalyzeResume = () => {
                   <Button
                     onClick={handleUpload}
                     disabled={!file || isLoading}
-                    className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 h-11 transition-all duration-200"
+                    className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-2 h-11 transition-all duration-200"
                   >
                     {isLoading ? (
                       <>
@@ -317,7 +317,7 @@ const AnalyzeResume = () => {
           {/* Step 2: Analyze Button */}
           {uploadedResumeId && !analysisResult && (
             <Card className="mb-8 shadow-sm border-blue-100 animate-fade-in">
-              <CardHeader className="border-b bg-blue-50/70">
+              <CardHeader className="border-b bg-indigo-50/70">
                 <CardTitle className="flex items-center gap-2 text-xl">
                   <BarChart4 className="h-5 w-5 text-blue-500" />
                   Step 2: Analyze Resume
@@ -327,7 +327,7 @@ const AnalyzeResume = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
-                <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-lg mb-6">
+                <div className="flex items-center gap-4 p-4 bg-indigo-50 rounded-lg mb-6">
                   <div className="flex-shrink-0">
                     <CheckCircle2 className="h-8 w-8 text-green-500" />
                   </div>
@@ -346,7 +346,7 @@ const AnalyzeResume = () => {
                   <Button
                     onClick={handleAnalysisTrigger}
                     disabled={isLoading}
-                    className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 h-11 transition-all duration-200"
+                    className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-2 h-11 transition-all duration-200"
                   >
                     {isLoading ? (
                       <>
@@ -422,7 +422,7 @@ const AnalyzeResume = () => {
                       <h3 className="text-xl font-bold mb-3">Score Summary</h3>
                       <div className={`p-4 rounded-lg mb-4 ${
                         analysisResult.overallScore >= 80 ? 'bg-green-50 border border-green-100' :
-                        analysisResult.overallScore >= 60 ? 'bg-blue-50 border border-blue-100' :
+                        analysisResult.overallScore >= 60 ? 'bg-indigo-50 border border-blue-100' :
                         'bg-amber-50 border border-amber-100'
                       }`}>
                         <div className="flex items-start gap-3">
@@ -461,7 +461,7 @@ const AnalyzeResume = () => {
 
               {/* Category Scores */}
               <div>
-                <h2 className="text-2xl font-semibold mb-5 pl-1 border-l-4 border-blue-500 pl-3">Category Breakdown</h2>
+                <h2 className="text-2xl font-semibold mb-5 pl-1 border-l-4 border-indigo-500 pl-3">Category Breakdown</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                   <ResumeScoreCard
                     category="Formatting"
@@ -555,7 +555,7 @@ const AnalyzeResume = () => {
                   </Button>
                   <Button 
                     onClick={() => navigate('/builder')}
-                    className="min-w-36 h-12 bg-blue-600 hover:bg-blue-700 text-white transition-all" 
+                    className="min-w-36 h-12 bg-indigo-600 hover:bg-indigo-700 text-white transition-all" 
                   >
                     <FileText className="mr-2 h-4 w-4" /> Build Improved Resume
                   </Button>

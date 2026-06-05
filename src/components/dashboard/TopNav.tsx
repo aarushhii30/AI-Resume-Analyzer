@@ -75,7 +75,7 @@ export function TopNav() {
             <Button variant="ghost" className="relative gap-1.5 sm:gap-2 pl-1.5 sm:pl-2 pr-2 sm:pr-4 rounded-full hover:bg-gray-100">
               <Avatar className="h-7 w-7 sm:h-8 sm:w-8 border border-gray-200">
                 <AvatarImage src={user?.photoURL || ''} />
-                <AvatarFallback className="bg-blue-100 text-blue-700 font-medium text-xs sm:text-sm">{getInitials()}</AvatarFallback>
+                <AvatarFallback className="bg-indigo-100 text-blue-700 font-medium text-xs sm:text-sm">{getInitials()}</AvatarFallback>
               </Avatar>
               <span className="hidden md:block font-medium text-sm text-gray-700">{getDisplayName()}</span>
             </Button>

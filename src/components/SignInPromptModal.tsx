@@ -39,7 +39,7 @@ export function SignInPromptModal({ isOpen, onClose }: SignInPromptModalProps) {
           To access this feature, please sign in or create an account. Resume Analyzer is available without signing in.
         </p>
         <div className="flex flex-col space-y-3">
-          <Button onClick={handleLoginClick} className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full">
+          <Button onClick={handleLoginClick} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-full">
             Sign In
           </Button>
           <Button onClick={handleRegisterClick} variant="outline" className="w-full border-slate-300 hover:bg-slate-50 rounded-full">

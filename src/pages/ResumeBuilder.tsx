@@ -468,43 +468,43 @@ const ResumeBuilder = () => {
                   <TabsList className="w-full rounded-none border-b bg-gray-50 px-1 sm:px-2 py-0 h-auto flex flex-wrap overflow-x-auto">
                     <TabsTrigger 
                       value="personal" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "personal" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "personal" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Personal Info
                     </TabsTrigger>
                     <TabsTrigger 
                       value="summary" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "summary" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "summary" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Summary
                     </TabsTrigger>
                     <TabsTrigger 
                       value="experience" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "experience" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "experience" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Experience
                     </TabsTrigger>
                     <TabsTrigger 
                       value="education" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "education" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "education" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Education
                     </TabsTrigger>
                     <TabsTrigger 
                       value="skills" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "skills" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "skills" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Skills
                     </TabsTrigger>
                     <TabsTrigger 
                       value="projects" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "projects" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "projects" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Projects
                     </TabsTrigger>
                     <TabsTrigger 
                       value="certs" 
-                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "certs" ? "border-blue-500" : "border-transparent"}`}
+                      className={`py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm rounded-none border-b-2 ${activeTab === "certs" ? "border-indigo-500" : "border-transparent"}`}
                     >
                       Certifications
                     </TabsTrigger>
@@ -577,7 +577,7 @@ const ResumeBuilder = () => {
                     <div className="pt-3 sm:pt-4 flex justify-end">
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700 h-8 sm:h-10 text-xs sm:text-sm"
+                        className="bg-indigo-600" hover:bg-indigo-700 h-8 sm:h-10 text-xs sm:text-sm"
                         size="sm"
                       >
                         Next: Summary <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
@@ -589,7 +589,7 @@ const ResumeBuilder = () => {
                     <div className="space-y-3">
                       <div className="flex items-center">
                         <Label htmlFor="summary" className="text-gray-700 font-medium">Professional Summary</Label>
-                        <Badge variant="outline" className="ml-2 text-xs bg-blue-50 text-blue-700 border-blue-200">Recommended</Badge>
+                        <Badge variant="outline" className="ml-2 text-xs bg-indigo-50 text-blue-700 border-blue-200">Recommended</Badge>
                       </div>
                       <p className="text-sm text-gray-500">Write a concise overview of your professional background, key skills, and career goals.</p>
                       <Textarea
@@ -607,7 +607,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Experience <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -617,7 +617,7 @@ const ResumeBuilder = () => {
                   <TabsContent value="experience" className="p-6 space-y-6">
                     {userInfo.experience.map((exp, index) => (
                       <Card key={index} className="p-0 border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                        <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
                         <CardHeader className="p-4 bg-gray-50">
                           <div className="flex justify-between items-center">
                             <CardTitle className="text-base font-medium flex items-center">
@@ -741,7 +741,7 @@ const ResumeBuilder = () => {
                                 type="button" 
                                 variant="secondary" 
                                 onClick={() => addResponsibility(index)}
-                                className="bg-blue-100 hover:bg-blue-200 text-blue-700"
+                                className="bg-indigo-100 hover:bg-blue-200 text-blue-700"
                               >
                                 <Plus className="h-4 w-4 mr-1" /> Add
                               </Button>
@@ -753,7 +753,7 @@ const ResumeBuilder = () => {
                     <Button 
                       variant="outline" 
                       onClick={addExperienceBlock}
-                      className="border-dashed border-gray-300 hover:border-blue-400 hover:bg-blue-50 text-gray-600 hover:text-blue-600 w-full py-6"
+                      className="border-dashed border-gray-300 hover:border-blue-400 hover:bg-indigo-50 text-gray-600 hover:text-indigo-600 w-full py-6"
                     >
                       <Plus className="mr-2 h-4 w-4" /> Add Another Experience
                     </Button>
@@ -763,7 +763,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Education <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -838,7 +838,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Skills <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -848,7 +848,7 @@ const ResumeBuilder = () => {
                   <TabsContent value="skills" className="p-6 space-y-6">
                     {userInfo.skills.map((skillSet, index) => (
                       <Card key={index} className="p-0 border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-                        <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                        <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
                         <CardHeader className="p-4 bg-gray-50">
                           <div className="flex justify-between items-center">
                             <CardTitle className="text-base font-medium flex items-center">
@@ -902,7 +902,7 @@ const ResumeBuilder = () => {
                     <Button 
                       variant="outline" 
                       onClick={addSkillCategory}
-                      className="border-dashed border-gray-300 hover:border-blue-400 hover:bg-blue-50 text-gray-600 hover:text-blue-600 w-full py-6"
+                      className="border-dashed border-gray-300 hover:border-blue-400 hover:bg-indigo-50 text-gray-600 hover:text-indigo-600 w-full py-6"
                     >
                       <Plus className="mr-2 h-4 w-4" /> Add Another Skill Category
                     </Button>
@@ -912,7 +912,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Projects <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -968,7 +968,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Certifications <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -1012,7 +1012,7 @@ const ResumeBuilder = () => {
                       </Button>
                       <Button 
                         onClick={handleNextTab}
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-indigo-600 hover:bg-indigo-700"
                       >
                         Next: Projects <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
@@ -1034,7 +1034,7 @@ const ResumeBuilder = () => {
                 <CardTitle className="flex items-center">
                   <FileText className="h-5 w-5 mr-2" /> Generated Resume
                 </CardTitle>
-                <CardDescription className="text-blue-100">
+                <CardDescription className="text-indigo-100">
                   Review your AI-generated resume content below
                 </CardDescription>
               </CardHeader>

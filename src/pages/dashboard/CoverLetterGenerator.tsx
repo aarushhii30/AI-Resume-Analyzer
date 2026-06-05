@@ -188,7 +188,7 @@ export default function CoverLetterGenerator() {
             <p className="text-muted-foreground">Create customized cover letters for your job applications with AI assistance</p>
           </div>
           
-          <Badge variant="outline" className="px-3 py-1 text-sm font-medium border-blue-200 bg-blue-50 text-blue-700 self-start md:self-center">
+          <Badge variant="outline" className="px-3 py-1 text-sm font-medium border-blue-200 bg-indigo-50 text-blue-700 self-start md:self-center">
             <Sparkles className="h-3.5 w-3.5 mr-1 text-blue-500" />
             AI Powered
           </Badge>
@@ -197,7 +197,7 @@ export default function CoverLetterGenerator() {
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="grid w-full grid-cols-2 mb-8">
-          <TabsTrigger value="create" className="data-[state=active]:bg-blue-50 data-[state=active]:text-blue-700">
+          <TabsTrigger value="create" className="data-[state=active]:bg-indigo-50 data-[state=active]:text-blue-700">
             <FileEdit className="h-4 w-4 mr-2" />
             Create Letter
           </TabsTrigger>
@@ -306,7 +306,7 @@ export default function CoverLetterGenerator() {
                           className={`
                             p-4 rounded-lg border-2 cursor-pointer transition-all
                             ${selectedTemplate === template.id 
-                              ? 'border-blue-500 bg-blue-50/50' 
+                              ? 'border-indigo-500 bg-indigo-50/50' 
                               : 'border-gray-200 hover:border-gray-300'}
                           `}
                         >
@@ -445,7 +445,7 @@ export default function CoverLetterGenerator() {
                     <Button 
                       variant="outline" 
                       onClick={() => setActiveTab("create")}
-                      className="border-blue-300 bg-blue-50 hover:bg-blue-100 text-blue-700"
+                      className="border-blue-300 bg-indigo-50 hover:bg-indigo-100 text-blue-700"
                     >
                       <ArrowRight className="mr-2 h-4 w-4" />
                       Create Another

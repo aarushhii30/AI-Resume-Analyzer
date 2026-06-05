@@ -58,14 +58,14 @@ const Home = () => {
           <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center opacity-[0.03]"></div>
           
           {/* Accent circle */}
-          <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-blue-50 opacity-60 blur-3xl"></div>
+          <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-indigo-50 opacity-60 blur-3xl"></div>
           
           {/* Animated dots */}
           <div className="hidden lg:block">
             {[...Array(6)].map((_, i) => (
               <div 
                 key={i}
-                className="absolute rounded-full bg-blue-600 opacity-10"
+                className="absolute rounded-full bg-indigo-600 opacity-10"
                 style={{
                   width: `${Math.random() * 6 + 4}px`,
                   height: `${Math.random() * 6 + 4}px`,
@@ -84,14 +84,14 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Text content */}
             <div className={`lg:col-span-5 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-sm font-medium mb-6">
                 <Zap size={14} className="mr-1.5" /> AI-Powered Resume Optimization
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-4 sm:mb-6 leading-tight">
                 AI Resume Analyzer: <span className="relative inline-block">
                   <span className="relative z-10">Transform</span>
-                  <span className="absolute bottom-1 left-0 w-full h-2 sm:h-3 bg-blue-100 -z-10"></span>
+                  <span className="absolute bottom-1 left-0 w-full h-2 sm:h-3 bg-indigo-100 -z-10"></span>
                 </span> your job search
               </h1>
               
@@ -103,7 +103,7 @@ const Home = () => {
               <Button 
                 size="lg" 
                 onClick={handleButtonClick}
-                className="w-full sm:w-auto rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base py-5 px-5 sm:px-6"
+                className="w-full sm:w-auto rounded-full bg-indigo-600 hover:bg-indigo-700 text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base py-5 px-5 sm:px-6"
               >
                   <span className="mr-2">Start Optimizing</span>
                   <ArrowRight size={16} className="sm:size-[18px]" />
@@ -113,7 +113,7 @@ const Home = () => {
                   variant="ghost" 
                   size="lg" 
                   onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="w-full sm:w-auto text-slate-600 hover:text-blue-600"
+                  className="w-full sm:w-auto text-slate-600 hover:text-indigo-600"
                 >
                   See how it works <ChevronRight size={16} className="ml-1" />
                 </Button>
@@ -122,15 +122,15 @@ const Home = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6 pt-4 sm:pt-6 border-t border-slate-100">
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-600">94%</div>
+                  <div className="text-xl sm:text-2xl font-bold text-indigo-600">94%</div>
                   <div className="text-xs sm:text-sm text-slate-500">ATS Pass Rate</div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-600">3x</div>
+                  <div className="text-xl sm:text-2xl font-bold text-indigo-600">3x</div>
                   <div className="text-xs sm:text-sm text-slate-500">More Interviews</div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-600">10k+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-indigo-600">10k+</div>
                   <div className="text-xs sm:text-sm text-slate-500">Users</div>
                 </div>
               </div>
@@ -156,13 +156,13 @@ const Home = () => {
                     {/* Header */}
                     <div className="bg-slate-50 px-6 py-4 border-b border-slate-100 flex justify-between items-center">
                       <div className="flex items-center">
-                        <div className="w-8 h-8 rounded-md bg-blue-600 flex items-center justify-center mr-3">
+                        <div className="w-8 h-8 rounded-md bg-indigo-600 flex items-center justify-center mr-3">
                           <FileText size={16} className="text-white" />
                         </div>
                         <span className="font-medium text-slate-800">Resume Analysis Dashboard</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <div className="px-3 py-1 bg-blue-50 text-blue-600 text-xs font-medium rounded-full flex items-center">
+                        <div className="px-3 py-1 bg-indigo-50 text-indigo-600 text-xs font-medium rounded-full flex items-center">
                           <BarChart size={12} className="mr-1" /> Pro Version
                         </div>
                       </div>
@@ -192,7 +192,7 @@ const Home = () => {
                         {/* Score card */}
                         <div className="bg-slate-50 rounded-lg p-4 h-28 flex items-center">
                           <div className="w-20 h-20 rounded-full border-4 border-blue-100 flex items-center justify-center mr-4">
-                            <div className="text-xl font-bold text-blue-600">87%</div>
+                            <div className="text-xl font-bold text-indigo-600">87%</div>
                           </div>
                           <div className="flex flex-col justify-center">
                             <div className="font-medium mb-1 text-slate-800">ATS Compatibility</div>
@@ -209,11 +209,11 @@ const Home = () => {
                         <div className="bg-slate-50 rounded-lg p-4 flex-1">
                           <div className="text-sm font-medium text-slate-600 mb-3">Suggested Keywords</div>
                           <div className="flex flex-wrap gap-2">
-                            <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">leadership</span>
-                            <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">analytics</span>
-                            <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">project management</span>
-                            <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">strategy</span>
-                            <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">innovation</span>
+                            <span className="px-2 py-1 bg-indigo-100 text-blue-700 text-xs rounded-full">leadership</span>
+                            <span className="px-2 py-1 bg-indigo-100 text-blue-700 text-xs rounded-full">analytics</span>
+                            <span className="px-2 py-1 bg-indigo-100 text-blue-700 text-xs rounded-full">project management</span>
+                            <span className="px-2 py-1 bg-indigo-100 text-blue-700 text-xs rounded-full">strategy</span>
+                            <span className="px-2 py-1 bg-indigo-100 text-blue-700 text-xs rounded-full">innovation</span>
                           </div>
                         </div>
                       </div>
@@ -236,12 +236,12 @@ const Home = () => {
                 
                 <div className="hidden lg:block absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-3 animate-float animation-delay-1000">
                   <div className="flex items-center">
-                    <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center mr-2">
-                      <BarChart size={18} className="text-blue-600" />
+                    <div className="w-9 h-9 rounded-full bg-indigo-100 flex items-center justify-center mr-2">
+                      <BarChart size={18} className="text-indigo-600" />
                     </div>
                     <div>
                       <div className="text-xs font-medium text-slate-800">Readability</div>
-                      <div className="text-sm font-bold text-blue-600">Professional</div>
+                      <div className="text-sm font-bold text-indigo-600">Professional</div>
                     </div>
                   </div>
                 </div>
@@ -268,7 +268,7 @@ const Home = () => {
               {/* Feature 1 */}
               <div className="reveal fade-bottom delay-300">
                 <div className="bg-slate-50 rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6">
                     <span className="text-lg font-bold">1</span>
                   </div>
                   
@@ -282,7 +282,7 @@ const Home = () => {
               {/* Feature 2 */}
               <div className="reveal fade-bottom delay-500">
                 <div className="bg-slate-50 rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6">
                     <span className="text-lg font-bold">2</span>
                   </div>
                   
@@ -296,7 +296,7 @@ const Home = () => {
               {/* Feature 3 */}
               <div className="reveal fade-bottom delay-700">
                 <div className="bg-slate-50 rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6">
                     <span className="text-lg font-bold">3</span>
           </div>
 
@@ -330,8 +330,8 @@ const Home = () => {
           </div>
 
           {/* Gradient spots */}
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-blue-50 opacity-40 blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-blue-50 opacity-40 blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-indigo-50 opacity-40 blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-indigo-50 opacity-40 blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -363,14 +363,14 @@ const Home = () => {
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 overflow-hidden mr-3 border border-blue-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-blue-600 p-2">
+                  <div className="w-10 h-10 rounded-full bg-indigo-100 flex-shrink-0 overflow-hidden mr-3 border border-indigo-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-indigo-600 p-2">
                       <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Sarah Johnson</p>
-                    <p className="text-sm text-blue-600">Software Engineer at Google</p>
+                    <p className="text-sm text-indigo-600">Software Engineer at Google</p>
                   </div>
                 </div>
               </div>
@@ -390,14 +390,14 @@ const Home = () => {
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 overflow-hidden mr-3 border border-blue-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-blue-600 p-2">
+                  <div className="w-10 h-10 rounded-full bg-indigo-100 flex-shrink-0 overflow-hidden mr-3 border border-indigo-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-indigo-600 p-2">
                       <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Michael Chen</p>
-                    <p className="text-sm text-blue-600">Marketing Director</p>
+                    <p className="text-sm text-indigo-600">Marketing Director</p>
                   </div>
                 </div>
               </div>
@@ -417,14 +417,14 @@ const Home = () => {
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 overflow-hidden mr-3 border border-blue-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-blue-600 p-2">
+                  <div className="w-10 h-10 rounded-full bg-indigo-100 flex-shrink-0 overflow-hidden mr-3 border border-indigo-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-indigo-600 p-2">
                       <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div>
                     <p className="font-medium text-slate-900">Priya Patel</p>
-                    <p className="text-sm text-blue-600">Business Analyst</p>
+                    <p className="text-sm text-indigo-600">Business Analyst</p>
                   </div>
                 </div>
               </div>
@@ -432,7 +432,7 @@ const Home = () => {
             
             {/* Featured Testimonial - Large */}
             <div className="mt-8 sm:mt-12 reveal fade-bottom delay-300">
-              <div className="bg-blue-50/80 backdrop-blur-sm rounded-2xl p-5 sm:p-8 md:p-12 relative overflow-hidden hover:shadow-lg transition-all duration-300">
+              <div className="bg-indigo-50/80 backdrop-blur-sm rounded-2xl p-5 sm:p-8 md:p-12 relative overflow-hidden hover:shadow-lg transition-all duration-300">
                 {/* Background pattern */}
                 <div className="absolute inset-0 opacity-10">
                   <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -461,13 +461,13 @@ const Home = () => {
                   
                   <div className="flex items-center">
                     <div className="h-14 w-14 rounded-full bg-white p-1 shadow-sm mr-4">
-                      <div className="h-full w-full rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      <div className="h-full w-full rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
                         <span className="font-bold text-lg">JD</span>
                       </div>
                     </div>
                     <div>
                       <p className="font-bold text-slate-900 text-lg">James Donovan</p>
-                      <p className="text-blue-600">Product Manager at Microsoft</p>
+                      <p className="text-indigo-600">Product Manager at Microsoft</p>
                     </div>
                   </div>
                 </div>
@@ -478,19 +478,19 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-blue-600 text-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-indigo-600 text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center reveal fade-bottom">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
               Ready to land your dream job?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-10 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-indigo-100 mb-6 sm:mb-10 max-w-2xl mx-auto">
               Join thousands of professionals who have transformed their careers with our AI-powered resume tools.
             </p>
             <Button 
               size="lg"
               onClick={handleButtonClick}
-              className="bg-white text-blue-600 hover:bg-blue-50 rounded-full h-12 sm:h-14 px-6 sm:px-8 transition-all text-sm sm:text-base"
+              className="bg-white text-indigo-600 hover:bg-indigo-50 rounded-full h-12 sm:h-14 px-6 sm:px-8 transition-all text-sm sm:text-base"
             >
               <span className="mr-2">Get Started Free</span>
               <ArrowRight size={16} className="sm:size-[18px]" />

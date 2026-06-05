@@ -53,14 +53,14 @@ export function Navbar() {
           <Button 
             variant="outline" 
             onClick={() => navigate('/dashboard')}
-            className="rounded-full border-slate-200 hover:border-blue-600 hover:bg-blue-50 transition-all"
+            className="rounded-full border-slate-200 hover:border-blue-600 hover:bg-indigo-50 transition-all"
           >
             Dashboard
           </Button>
           <Button 
             variant="ghost" 
             onClick={handleLogout}
-            className="text-slate-600 hover:text-blue-600 hover:bg-transparent"
+            className="text-slate-600 hover:text-indigo-600 hover:bg-transparent"
           >
             Logout
           </Button>
@@ -70,7 +70,7 @@ export function Navbar() {
       return (
         <Button 
           onClick={handleGetStartedClick}
-          className="rounded-full bg-blue-600 hover:bg-blue-700 text-white transition-all"
+          className="rounded-full bg-indigo-600 hover:bg-indigo-700 text-white transition-all"
         >
           <span className="mr-2">Get Started</span>
           <ArrowRight size={16} />
@@ -108,7 +108,7 @@ export function Navbar() {
     } else {
       return (
         <Button
-          className="w-full rounded-full bg-blue-600 hover:bg-blue-700 text-white"
+          className="w-full rounded-full bg-indigo-600 hover:bg-indigo-700 text-white"
           onClick={() => {
             setIsMenuOpen(false);
             handleGetStartedClick();
@@ -122,7 +122,7 @@ export function Navbar() {
   };
 
   const isActive = (path: string) => {
-    return location.pathname === path ? "text-blue-600 font-medium" : "text-slate-600 hover:text-blue-600";
+    return location.pathname === path ? "text-indigo-600 font-medium" : "text-slate-600 hover:text-indigo-600";
   };
 
   const navLinks = [
@@ -150,7 +150,7 @@ export function Navbar() {
         
         <div className="container mx-auto flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2 group">
-            <span className="font-bold text-2xl text-slate-900 group-hover:text-blue-600 transition-colors">
+            <span className="font-bold text-2xl text-slate-900 group-hover:text-indigo-600 transition-colors">
               AI Career Forge
             </span>
           </Link>
@@ -160,7 +160,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="text-slate-600 hover:text-blue-600 hover:bg-blue-50"
+              className="text-slate-600 hover:text-indigo-600 hover:bg-indigo-50"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -222,9 +222,9 @@ export function Navbar() {
                       navigate(link.to);
                     }
                   }}
-                  className={`${isActive(link.to)} flex items-center space-x-4 p-3 rounded-lg transition-colors duration-200 hover:bg-blue-50 cursor-pointer`}
+                  className={`${isActive(link.to)} flex items-center space-x-4 p-3 rounded-lg transition-colors duration-200 hover:bg-indigo-50 cursor-pointer`}
                 >
-                  <span className={isActive(link.to) === "text-blue-600 font-medium" ? "text-blue-600" : "text-slate-500"}>{link.icon}</span>
+                  <span className={isActive(link.to) === "text-indigo-600 font-medium" ? "text-indigo-600" : "text-slate-500"}>{link.icon}</span>
                   <span className="text-lg">{link.text}</span>
                 </div>
               ))}

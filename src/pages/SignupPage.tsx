@@ -144,7 +144,7 @@ const SignupPage: React.FC = () => {
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                             Your Next Career Move.
                         </h2>
-                        <p className="text-xl font-light text-blue-100 max-w-md mx-auto">
+                        <p className="text-xl font-light text-indigo-100 max-w-md mx-auto">
                             "Stop guessing, start impressing. Let our AI guide you to a better resume and the right opportunities."
                         </p>
                         <div className="pt-4">

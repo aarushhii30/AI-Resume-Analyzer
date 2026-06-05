@@ -120,7 +120,7 @@ const LoginPage: React.FC = () => {
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                             Craft Your Future.
                         </h2>
-                        <p className="text-xl font-light text-blue-100 max-w-md mx-auto">
+                        <p className="text-xl font-light text-indigo-100 max-w-md mx-auto">
                             "Leverage AI to build a resume that stands out and matches you with the perfect job."
                         </p>
                         <div className="pt-4">

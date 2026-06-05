@@ -214,7 +214,7 @@ export default function HelpAndTips() {
                       href={`https://www.youtube.com/watch?v=${selectedVideo}`} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="px-4 py-2 text-sm bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors rounded-md flex items-center"
+                      className="px-4 py-2 text-sm bg-indigo-50 text-blue-700 hover:bg-indigo-100 transition-colors rounded-md flex items-center"
                     >
                       Watch on YouTube <ExternalLink className="ml-1 h-3 w-3" />
                     </a>

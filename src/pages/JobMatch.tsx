@@ -197,7 +197,7 @@ const JobMatchPage = () => {
                 </CardDescription>
               </CardHeader>
               {showResumeGuide && (
-                <div className="bg-blue-50 p-3 text-sm text-blue-800 border-b border-blue-100">
+                <div className="bg-indigo-50 p-3 text-sm text-blue-800 border-b border-blue-100">
                   <ul className="list-disc pl-5 space-y-1">
                     <li>Ensure your resume is in PDF or DOCX format.</li>
                     <li>For best results, use an up-to-date, well-formatted resume.</li>
@@ -287,7 +287,7 @@ const JobMatchPage = () => {
                 </CardDescription>
               </CardHeader>
               {showJobGuide && (
-                <div className="bg-blue-50 p-3 text-sm text-blue-800 border-b border-blue-100">
+                <div className="bg-indigo-50 p-3 text-sm text-blue-800 border-b border-blue-100">
                   <ul className="list-disc pl-5 space-y-1">
                     <li>Copy the entire job description for best results</li>
                     <li>Include requirements, qualifications, and responsibilities</li>
