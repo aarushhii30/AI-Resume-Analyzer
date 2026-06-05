@@ -65,19 +65,19 @@
 
 ### Dashboard
 <!-- Replace with your actual screenshot -->
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
 ### Resume Analysis
 <!-- Replace with your actual screenshot -->
-![Resume Analysis](./screenshots/analyze.png)
+![Resume Analysis](./screenshots/analsys(2).png)
 
 ### Job Match
 <!-- Replace with your actual screenshot -->
-![Job Match](./screenshots/job-match.png)
+![Job Match](./screenshots/jobmatch.png)
 
 ### Resume Builder
 <!-- Replace with your actual screenshot -->
-![Resume Builder](./screenshots/builder.png)
+![Resume Builder](./screenshots/resumebuilder.png)
 
 ---
 
